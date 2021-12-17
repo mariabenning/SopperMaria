@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react"
 import { useForm } from 'react-hook-form';
+import ListaDeProdutos from "../ListaDeProdutos/ListaDeProdutos";
+import Carrinho from "../Carrinho/Carrinho";
 
 
-import {TituloCadastro, InputCadastro, CamposCadastro, buttonRegistrar, CardGrid, CardProdutos, CardCarrinho } from "./styled";
+import {TituloCadastro, ContainerProdutos } from "./styled";
 
 
 const Cadastro =() => {
@@ -41,17 +43,10 @@ const FinalizarRegistro= (event) => {
           <input  value={date} onChange={mudaDate} type ="date"></input>
           <button>registar</button>
           </form>
-
-          <CardGrid>
-          <CardProdutos>
-          <h2>Lista de produtos</h2>
-          </CardProdutos>
-        
-          <CardCarrinho>
-          <h2>Carrinho</h2>
-          </CardCarrinho>
-
-          </CardGrid>
+          <ContainerProdutos>
+          <ListaDeProdutos></ListaDeProdutos>
+          <Carrinho></Carrinho>
+          </ContainerProdutos>
       </div>
     );
   }

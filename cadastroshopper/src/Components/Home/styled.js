@@ -27,6 +27,7 @@ export const ImgLogo = styled.img `
 //width: 120px; 
 height: 60px; 
 margin-left: 50px;
+
 ` 
 
 
