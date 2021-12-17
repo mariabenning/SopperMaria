@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle `
  export const Header = styled.div`
  margin: 5px;
  display: flex;
+ flex-wrap: wrap;
  justify-content: space-between;
  background: white;
  height: 60px;
